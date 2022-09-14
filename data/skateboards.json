@@ -1,0 +1,26 @@
+[
+  {
+    "deck":"Birdhouse",
+    "durability":6,
+    "pop": 5,
+    "cost": 50
+  },
+  {
+    "deck":"Flip",
+    "durability":8,
+    "pop": 7,
+    "cost": 60
+  },
+  {
+    "deck":"Toy Machine",
+    "durability": 9,
+    "pop": 7,
+    "cost": 65
+  },
+  {
+    "deck": "Blank",
+    "durability": 4,
+    "pop": 5,
+    "cost": 30 
+  }
+]
