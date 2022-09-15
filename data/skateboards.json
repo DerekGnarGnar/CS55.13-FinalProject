@@ -24,14 +24,14 @@
     "deck": "Blank",
     "durability": 4,
     "pop": 5,
-    "cost": 30 
+    "cost": 30,
     "id": 4
   },
   {
     "deck": "Shorty's",
     "durability": 6,
     "pop": 8,
-    "cost": 45 
+    "cost": 45 ,
     "id": 5
   }
 ]

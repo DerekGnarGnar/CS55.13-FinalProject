@@ -36,7 +36,7 @@ return (
       <p className="cart-text">Air: {itemData.air}</p>
       <p className="cart-text">Speed: {itemData.speed}</p>
       <p className="cart-text">Balance: {itemData.balance}</p>
-      <a href={'mailto' + itemData.email} className="card-link">{itemData.email}></a>
+      <a href={'mailto' + itemData.email} className="card-link">{itemData.email}</a>
       
       </div>
   </article>
