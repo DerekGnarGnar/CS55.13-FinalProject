@@ -18,7 +18,9 @@ export async function getStaticProps(){
 export default function Home({allData}){
   return (
     <Layout home>
-    <div className="card col-6">
+   <div className="container">
+      <div className="row text-center">
+    <div className="card col-md-6">
     <h1>Choose Your Skater!</h1>
       <div className="list-group">
         {allData.map(({id,name}) => (
@@ -28,7 +30,7 @@ export default function Home({allData}){
         ))}
         </div>
     </div>
-    <div className="card col-6">
+    <div className="card col-md-6">
     <h1>Choose Your Skateboard!</h1>
       <div className="list-group">
         {allData.map(({id,name}) => (
@@ -38,6 +40,8 @@ export default function Home({allData}){
         ))}
         </div>
     </div>
+  </div>
+  </div>
     </Layout>
   );
 }

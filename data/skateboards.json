@@ -3,24 +3,35 @@
     "deck":"Birdhouse",
     "durability":6,
     "pop": 5,
-    "cost": 50
+    "cost": 50,
+    "id": 1
   },
   {
     "deck":"Flip",
     "durability":8,
     "pop": 7,
-    "cost": 60
+    "cost": 60,
+    "id": 2
   },
   {
     "deck":"Toy Machine",
     "durability": 9,
     "pop": 7,
-    "cost": 65
+    "cost": 65,
+    "id": 3
   },
   {
     "deck": "Blank",
     "durability": 4,
     "pop": 5,
     "cost": 30 
+    "id": 4
+  },
+  {
+    "deck": "Shorty's",
+    "durability": 6,
+    "pop": 8,
+    "cost": 45 
+    "id": 5
   }
 ]

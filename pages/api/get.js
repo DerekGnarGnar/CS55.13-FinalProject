@@ -7,7 +7,7 @@ const dataDir = path.join(process.cwd(),"data");
 console.log(dataDir);
 
 export default function handler(req, res) {
-  const filePath = path.join(dataDir, "persons.json");
+  const filePath = path.join(dataDir, "skaters.json");
   const jsonData = fs.readFileSync(filePath, "utf8");
   const jsonObj = JSON.parse(jsonData);
 
