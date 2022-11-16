@@ -14,9 +14,8 @@ export async function getStaticProps({params}){
   };
 }
 //getStaticPaths collects all the possible IDs and lets Next know what they are
-
 export async function getStaticPaths() {
-  const paths = getAllIds();
+  const paths = await getAllIds();
   return {
     paths,
     fallback: false
@@ -29,17 +28,21 @@ export async function getStaticPaths() {
 export default function Entry({itemData}){
 return (
   <Layout>
-  <article className="card col-6">
-    <div className="card-body">
-      <h5 className="card-title"> {itemData.name} </h5>
-      <h6 className="card-subtitle mb-2 text-muted"></h6>
-      <p className="cart-text">Air: {itemData.air}</p>
-      <p className="cart-text">Speed: {itemData.speed}</p>
-      <p className="cart-text">Balance: {itemData.balance}</p>
-      <a href={'mailto' + itemData.email} className="card-link">{itemData.email}</a>
-      
-      </div>
-  </article>
+     <Layout home>
+   <div className="container">
+      <div className="row text-center">
+    <div className="card col-md-12">
+    
+    <h1 className="list-group-item list-group-item-action">{itemData.post_title}</h1>
+    <p>{itemData.post_content}, {itemData.post_date}</p>
+
+    </div>
+   
+    </div>
+  </div>
+  
+    </Layout>
+ 
 </Layout>
   );
 }
