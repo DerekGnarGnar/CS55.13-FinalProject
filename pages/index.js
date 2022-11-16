@@ -7,7 +7,7 @@ import Layout from '../components/layout';
 
 
 export async function getStaticProps(){
-  const allData = getSortedList();
+  const allData = await getSortedList();
   return {
     props: {
       allData
