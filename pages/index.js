@@ -21,7 +21,7 @@ export default function Home({allData}){
    <div className="container">
       <div className="row text-center">
     <div className="card col-md-12">
-    <h1>Here's my posts!!</h1>
+    <h1>Here my posts!!</h1>
       <div className="list-group">
         {allData.map(({id,name}) => (
       <Link key={id} href={`/${id}`}>
