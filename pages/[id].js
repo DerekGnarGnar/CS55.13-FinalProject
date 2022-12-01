@@ -28,20 +28,16 @@ export async function getStaticPaths() {
 export default function Entry({itemData}){
 return (
   <Layout>
-     <Layout home>
-   <div className="container">
-      <div className="row text-center">
-    <div className="card col-md-12">
+    <article className="card col-6">
+      <div classname="card-body">
+        <h5 className="card-title">{itemData.post_title}</h5>
+        
+      <div className="card-text" dangerouslySetInnerHTML={{__html: itemData.post_content}} />
+     
+        
+        </div>
+    </article>
     
-    <h1 className="list-group-item list-group-item-action">{itemData.post_title}</h1>
-    <p>{itemData.post_content}, {itemData.post_date}</p>
-
-    </div>
-   
-    </div>
-  </div>
-  
-    </Layout>
  
 </Layout>
   );
