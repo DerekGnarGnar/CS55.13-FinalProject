@@ -21,7 +21,7 @@ export default function Home({allData}){
    <div className="container">
       <div className="row text-center">
     <div className="card col-md-12">
-    <h1>Here my posts!!</h1>
+    <h1>Select Your Skater</h1>
       <div className="list-group">
         {allData.map(({id,name}) => (
       <Link key={id} href={`/${id}`}>
@@ -32,8 +32,26 @@ export default function Home({allData}){
     </div>
    
     </div>
+
+     
   </div>
-  
+  <div className="container">
+      <div className="row text-center">
+    <div className="card col-md-12">
+    <h1>Select Your Deck</h1>
+      <div className="list-group">
+        {allData.map(({id,name}) => (
+      <Link key={id} href={`/${id}`}>
+        <a className="list-group-item list-group-item-action">{name}</a>
+        </Link>
+        ))}
+        </div>
+    </div>
+   
+    </div>
+
+     
+  </div>
     </Layout>
   );
 }
